@@ -1,6 +1,6 @@
 <div class="video-reviews flex">
-  <div class="w-1/2">
-    <div class="w-[720px] float-right bg-black-pri py-36 px-12 flex flex-col items-center">
+  <div class="hidden lg:block lg:w-1/2">
+    <div class="w-full 2xl:w-[720px] float-right bg-black-pri py-36 px-12 flex flex-col items-center">
       <div class="relative nor-video w-[405px]">
         <img src="<?= get_theme_file_uri("assets/images/reviews/review1.png") ?>" alt="review">
         <div class="nor-video-bottom">
@@ -17,9 +17,10 @@
       </div>
     </div>
   </div>
-  <div class="w-1/2 bg-white ">
-    <div class="w-[720px] text-black-sec pl-20 py-36">
-      <div class="text-black-sec text-5xl text-center font-semibold">Se, hvad kunderne siger om NordiskGuld</div>
+  <div class="w-full lg:w-1/2 bg-white ">
+    <div class="w-full 2xl:w-[720px] text-black-sec px-10 2xl:pl-20 pt-0 lg:pt-36 pb-36">
+      <div class="text-black-sec text-3xl xl:text-5xl text-center font-semibold">Se, hvad kunderne siger om NordiskGuld
+      </div>
       <div class="mt-20 flex gap-8 flex-wrap justify-center">
         <div class="border-black-pri p-3 relative w-[175px] nor-video-preview playing">
           <img src="<?= get_theme_file_uri("assets/images/reviews/1.png") ?>" alt="">

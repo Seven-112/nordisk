@@ -1,12 +1,12 @@
 <div class="bg-white trend text-black-pri">
-  <div class="max-w-[1440px] m-auto py-36 px-16 flex gap-20">
-    <div class="w-1/2">
-      <div class="flex justify-between py-4 border-gray-bottom">
-        <div class="text-2xl font-semibold">Dagens Guldpriser</div>
+  <div class="max-w-[1440px] m-auto py-16 sm:py-36 px-5 sm:px-16 flex gap-20 flex-col 2xl:flex-row">
+    <div class="w-full lg:w-[800px] m-auto 2xl:w-1/2">
+      <div class="flex justify-between py-4 border-gray-bottom items-center">
+        <div class="text-sm sm:text-2xl font-semibold">Dagens Guldpriser</div>
         <div class="flex gap-2">
-          <div class="nor-outline-round-btn">Guld</div>
-          <div class="nor-gray-btn">Sølv</div>
-          <div class="nor-gray-btn">Begge</div>
+          <div class="text-xs sm:text-base nor-outline-round-btn max-sm:px-3">Guld</div>
+          <div class="text-xs sm:text-base nor-gray-btn max-sm:px-3">Sølv</div>
+          <div class="text-xs sm:text-base nor-gray-btn max-sm:px-3">Begge</div>
         </div>
       </div>
       <?php
@@ -62,56 +62,56 @@
         <?php
         foreach ($trends as $trend) {
           ?>
-          <div class="flex justify-between px-4 py-3 nor-tr">
-            <div class="w-24">
-              <div class="text-lg font-medium text-black-sec">
-                <?= $trend['unit'] ?>
-              </div>
-              <div>
-                <?= $trend['purity'] ?> ‰
-              </div>
+        <div class="flex justify-between px-4 py-3 nor-tr">
+          <div class="w-20 sm:w-24">
+            <div class="text-sm sm:text-lg font-medium text-black-sec">
+              <?= $trend['unit'] ?>
             </div>
-            <input class="nor-input py-2 px-3 w-[200px]" placeholder="1,0" />
-            <div class="text-right text-gray-pri">
-              <div class="text-xl font-medium">
-                <?= $trend['price'] ?> kr.
-              </div>
-              <div class="text-sm">+2 kroner højere</div>
+            <div class="text-xs sm:text-base">
+              <?= $trend['purity'] ?> ‰
             </div>
           </div>
-          <?php
+          <input class="nor-input py-2 px-3 w-[105px] sm:w-[200px]" placeholder="1,0" />
+          <div class="text-right text-gray-pri">
+            <div class="text-sm sm:text-xl font-medium">
+              <?= $trend['price'] ?> kr.
+            </div>
+            <div class="text-xs sm:text-sm">+2 kroner højere</div>
+          </div>
+        </div>
+        <?php
         }
         ?>
       </div>
       <div class="flex items-center justify-between py-5 font-medium text-black-sec border-gray-bottom">
-        <div class="text-2xl">Total Pris</div>
-        <div class="text-3xl">312,41 kr.</div>
+        <div class="text-base sm:text-2xl">Total Pris</div>
+        <div class="text-base sm:text-3xl">312,41 kr.</div>
       </div>
-      <div class="flex gap-4 mt-8">
-        <div class="w-1/2 nor-outline-btn">Modtag kuvert</div>
-        <div class="w-1/2 nor-gold-btn">Book Vurdering</div>
+      <div class="flex gap-4 mt-8 flex-col-reverse sm:flex-row">
+        <div class="w-full sm:w-1/2 nor-outline-btn max-sm:p-3 text-sm sm:text-base">Modtag kuvert</div>
+        <div class="w-full sm:w-1/2 nor-gold-btn max-sm:p-3 text-sm sm:text-base">Book Vurdering</div>
       </div>
     </div>
-    <div class="flex flex-col w-1/2">
-      <div class="flex justify-between py-4 border-gray-bottom">
-        <div class="text-2xl font-semibold">Prisdiagram</div>
+    <div class="w-full lg:w-[800px] m-auto 2xl:w-1/2 flex flex-col">
+      <div class="flex justify-between py-4 border-gray-bottom items-center">
+        <div class="text-sm sm:text-2xl font-semibold">Prisdiagram</div>
         <div class="flex gap-2">
-          <div class="nor-outline-round-btn">
+          <div class="text-xs sm:text-base nor-outline-round-btn max-sm:px-3">
             Guld
-            <i class="ml-2 fa-solid fa-chevron-down fa-2xs"></i>
+            <i class="m1-1 sm:ml-2 fa-solid fa-chevron-down fa-2xs"></i>
           </div>
-          <div class="nor-gray-btn">
+          <div class="text-xs sm:text-base nor-gray-btn max-sm:px-3">
             Per Gram
-            <i class="ml-2 fa-solid fa-chevron-down fa-2xs"></i>
+            <i class="m1-1 sm:ml-2 fa-solid fa-chevron-down fa-2xs"></i>
           </div>
-          <div class="nor-gray-btn">
+          <div class="text-xs sm:text-base nor-gray-btn max-sm:px-3">
             DKK
-            <i class="ml-2 fa-solid fa-chevron-down fa-2xs"></i>
+            <i class="m1-1 sm:ml-2 fa-solid fa-chevron-down fa-2xs"></i>
           </div>
         </div>
       </div>
-      <div class="mt-6 text-5xl font-semibold text-black-sec">1 821,71 DKK</div>
-      <div class="flex gap-4 mt-5">
+      <div class="mt-6 text-2xl sm:text-5xl font-semibold text-black-sec">1 821,71 DKK</div>
+      <div class="flex gap-4 mt-5 text-xs sm:text-base">
         <div>Guldprisvariation for sidste år</div>
         <div class="flex items-center gap-2 font-semibold text-green-pri">
           <i class="pt-1 mr-1 fa-solid fa-caret-up"></i>
@@ -119,18 +119,18 @@
         </div>
       </div>
       <div class="bg-[#f8f8f881] h-8 w-full"></div>
-      <?php echo do_shortcode('[progressive_chart height=543]'); ?>
-      <div class="flex gap-3 w-[650px] mt-8">
-        <div class="px-3 nor-gray-btn">1 dag</div>
-        <div class="px-3 nor-gray-btn">1 uge</div>
-        <div class="px-3 nor-gray-btn">3 måneder</div>
-        <div class="px-3 nor-gray-btn">6 måneder</div>
-        <div class="px-3 nor-outline-round-btn">1 år</div>
-        <div class="px-3 nor-gray-btn">5 år</div>
-        <div class="px-3 nor-gray-btn">10 år</div>
-        <div class="px-3 nor-gray-btn">alle</div>
+      <?php echo do_shortcode('[progressive_chart height=573]'); ?>
+      <div class="flex flex-wrap gap-3 w-full justify-center 2xl:w-[650px] mt-8">
+        <div class="px-3 nor-gray-btn text-xs sm:text-base">1 dag</div>
+        <div class="px-3 nor-gray-btn text-xs sm:text-base">1 uge</div>
+        <div class="px-3 nor-gray-btn text-xs sm:text-base">3 måneder</div>
+        <div class="px-3 nor-gray-btn text-xs sm:text-base">6 måneder</div>
+        <div class="px-3 nor-outline-round-btn text-xs sm:text-base">1 år</div>
+        <div class="px-3 nor-gray-btn text-xs sm:text-base">5 år</div>
+        <div class="px-3 nor-gray-btn text-xs sm:text-base">10 år</div>
+        <div class="px-3 nor-gray-btn text-xs sm:text-base">alle</div>
       </div>
-      <div class="flex justify-center gap-3 mt-8 nor-outline-btn">
+      <div class="flex justify-center gap-3 mt-8 nor-outline-btn max-sm:p-3 text-sm sm:text-base">
         <img src="<?= get_icon_uri("bell") ?>" alt="bell">
         Price Alert
       </div>
