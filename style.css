@@ -1,0 +1,18 @@
+/*
+Theme Name: Nordiskguld
+Version: 1.0.0
+Requires at least: 5.9.3
+Requires PHP: 7.4
+Tested up to: 8.2
+Description: A theme for https://nordiskguld.com.
+Author: Daniel
+*/
+
+@import url(./assets/css/font.css);
+@import url(./assets/css/nordisk.css);
+@import url(./assets/css/custom.css);
+
+body {
+  font-family: inter;
+  font-size: 1rem;
+}

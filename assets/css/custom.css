@@ -1,0 +1,70 @@
+.shipping {
+  background: url(../images/gold.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.shipping .counter-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  right: 0px;
+  top: 0px;
+  background-color: var(--gold-pri);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--black-sec);
+  border-radius: 50%;
+}
+
+.shipping .see-video {
+  border: 0.5px solid white;
+  color: white;
+  width: 185px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shipping .see-video:hover {
+  outline: 0.5px solid white;
+}
+
+#progressChart {
+  background-color: #f8f8f881;
+  height: 543px!important;
+}
+
+.progressive-tooltip {
+  color: black;
+  text-align: center;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(-50%, 0);
+  transition: all .1s ease;
+}
+
+.dotted-line {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-left: -1px;
+}
+
+.tooltip-table {
+  width: 100%;
+  min-width: 135px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  padding: 8px 24px;
+  box-shadow: 10px 20px 60px rgba(56, 69, 97, 0.08);
+}

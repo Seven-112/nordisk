@@ -1,0 +1,502 @@
+:root {
+  --black-pri: #202020;
+  --black-sec: #1E1E1E;
+  --black-thi: #2C2C2C;
+  --gray-pri: #A8AAAE;
+  --gray-sec: #F8F8F8;
+  --gray-thi: #E6E8EF;
+  --green-pri: #04B980;
+  --error-pri: #EF2F6E;
+  --error-sec: #FFE0EA;
+  --gold-pri: #CFB376;
+  --gold-sec: #D9C391;
+}
+
+.text-black-pri {
+  color: var(--black-pri);
+}
+
+.text-black-sec {
+  color: var(--black-sec);
+}
+
+.text-black-thi {
+  color: var(--black-thi);
+}
+
+.text-gray-pri {
+  color: var(--gray-pri);
+}
+
+.text-gray-thi {
+  color: var(--gray-thi);
+}
+
+.text-green-pri {
+  color: var(--green-pri);
+}
+
+.text-gold-pri {
+  color: var(--gold-pri);
+}
+
+.text-error-pri {
+  color: var(--error-pri);
+}
+
+.bg-black-pri {
+  background-color: var(--black-pri);
+}
+
+.bg-gray-sec {
+  background-color: var(--gray-sec);
+}
+
+.bg-error-sec {
+  background-color: var(--error-sec);
+}
+
+.border-black-pri {
+  border: 1px solid var(--black-pri);
+}
+
+.border-gray-thi {
+  border: 1px solid var(--gray-thi);
+}
+
+.border-dark-gray-top {
+  border-top: 1px solid #4A4A4A;
+}
+
+.border-gray-top {
+  border-top: 1px solid var(--gray-thi);
+}
+
+.border-gray-bottom {
+  border-bottom: 1px solid var(--gray-thi);
+}
+
+.border-gray-left {
+  border-left: 1px solid #4A4A4A;
+}
+
+.nor-shadow {
+  box-shadow: 10px 20px 60px rgba(56, 69, 97, 0.08);
+}
+
+.nor-input {
+  border: 1px solid #E6E8EF;
+  padding: 16px;
+}
+
+.nor-input[disabled] {
+  opacity: 0.5;
+  background: white;
+}
+
+.nor-input:focus {
+  outline: 0;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.nor-gold-btn,
+.nor-gold-btn-bright {
+  background-color: var(--gold-pri);
+  font-weight: 600;
+  padding: 16px 32px;
+  color: var(--black-sec);
+  cursor: pointer;
+  text-align: center;
+  transition: 0.1s;
+}
+
+.nor-gold-btn-bright {
+  background-color: #D3AD59;
+}
+
+.nor-gold-btn:hover {
+  background-color: var(--gold-sec);
+}
+
+.nor-gold-btn-bright:hover {
+  background-color: var(--gold-sec);
+}
+
+.nor-outline-btn {
+  font-weight: 600;
+  color: var(--black-sec);
+  border: 1px solid var(--black-sec);
+  cursor: pointer;
+  padding: 16px;
+  text-align: center;
+}
+
+.nor-outline-round-btn {
+  padding: 8px 20px;
+  font-weight: 600;
+  color: var(--black-sec);
+  border: 1px solid var(--black-sec);
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.nor-outline-btn:hover,
+.nor-outline-round-btn:hover {
+  border-color: #4A4A4A;
+  color: #4A4A4A;
+}
+
+.nor-product-btn {
+  font-weight: 600;
+  color: var(--black-sec);
+  border: 0.5px solid var(--black-sec);
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.nor-product-btn:not(.inactive):hover {
+  border-color: #4A4A4A;
+  color: #4A4A4A;
+}
+
+.nor-product-btn.inactive {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.nor-gray-btn {
+  padding: 8px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: var(--gray-sec);
+  color: var(--gray-pri);
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.nor-gray-btn:hover {
+  background-color: var(--gray-thi);
+}
+
+.btn-sm {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+input[type='radio'] {
+  accent-color: #232323;
+  width: 20px;
+}
+
+.nor-border {
+  border: 1px solid #E6E8EF;
+}
+
+.nor-radio {
+  cursor: pointer;
+}
+
+.nor-radio:has([type="radio"]:checked) {
+  background: white;
+  box-shadow: 10px 20px 60px rgba(56, 69, 97, 0.08);
+}
+
+.nor-radio:has([type="radio"]:not(:checked)) {
+  background: var(--gray-sec);
+  box-shadow: none;
+}
+
+.nor-table .nor-tr:nth-child(even) {
+  background-color: var(--gray-sec);
+}
+
+.nor-video-bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  height: 120px;
+  background: linear-gradient(180deg, rgba(32, 32, 32, 0) 0%, rgba(32, 32, 32, 0.8) 100%);
+}
+
+.nor-video-preview.paused::after {
+  content: "";
+  background-color: var(--black-sec);
+  opacity: 0.5;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+progress {
+  color: white;
+  font-size: 12px;
+  width: 100%;
+  height: 4px;
+  border: none;
+  background: #FFFFFF;
+  cursor: pointer;
+  box-sizing: content-box;
+  background-clip: content-box;
+  padding: 15px 0px;
+}
+
+progress::-moz-progress-bar {
+  color: white;
+  background: #434343;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #434343;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: white;
+}
+
+.nor-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.row:has(.td) {
+  padding: 12px 0px;
+}
+
+.row:has(.th) {
+  padding-bottom: 16px;
+}
+
+.row>.col {
+  display: flex;
+  width: 33.33%;
+  align-items: center;
+}
+
+.col:nth-child(1) {
+  justify-content: start;
+  gap: 16px;
+}
+
+.col:nth-child(2) {
+  justify-content: center;
+}
+
+.col:nth-child(3) {
+  justify-content: space-between;
+}
+
+.row .th {
+  font-size: 12px;
+  color: var(--black-thi);
+}
+
+.row .td {
+  font-size: 14px;
+}
+
+.row .disc {
+  color: #202020;
+}
+
+/* Create a custom checkbox */
+
+.checkbox-container {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 4px;
+  background-color: #eee;
+}
+
+.checkbox-container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+.checkbox-container input:checked~.checkmark {
+  background-color: #04B78A;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked~.checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  position: absolute;
+  font-family: 'FontAwesome';
+  content: "\f00c";
+  color: white;
+  width: 5px;
+  left: 5px;
+  height: 10px;
+}
+
+.navitem:hover {
+  cursor: pointer;
+  color: #A8AAAE;
+}
+
+.video-play,
+.video-pause {
+  transition: filter 0.2s;
+}
+
+.video-play:hover,
+.video-pause:hover {
+  filter: invert(0.2);
+  cursor: pointer;
+}
+
+.footer-btn {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.footer-btn:hover {
+  opacity: 1;
+}
+
+/*Styling Selectbox*/
+.dropdown {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #E6E8EF;
+  transition: all .5s ease;
+  position: relative;
+  font-size: 16px;
+  color: var(--black-sec);
+  text-align: left;
+  padding: 16px 20px;
+}
+
+.dropdown .select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown .select>i {
+  font-size: 13px;
+  color: #888;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  line-height: 20px
+}
+
+.dropdown.active .select>i {
+  transform: rotate(-90deg)
+}
+
+.dropdown .select span {
+  display: flex;
+  gap: 12px;
+}
+
+.dropdown.active {
+  border-radius: 2px 2px 0 0;
+}
+
+.dropdown .dropdown-menu {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  box-shadow: 0 1px 2px rgb(204, 204, 204);
+  border-radius: 0 1px 2px 2px;
+  overflow: hidden;
+  display: none;
+  max-height: 144px;
+  overflow-y: auto;
+  z-index: 9;
+  padding: 0;
+  list-style: none
+}
+
+.dropdown .dropdown-menu li {
+  padding: 10px 20px;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+}
+
+.dropdown .dropdown-menu li:hover {
+  background-color: #f2f2f2
+}
+
+.dropdown .dropdown-menu li:active {
+  background-color: #e2e2e2
+}
+
+.menu-trigger {
+  width: 28px;
+  height: 28px;
+  transition: 0.5s;
+}
+
+.burger-menu {
+  z-index: 9999;
+}
+
+.badge-cart {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  background-color: var(--error-pri);
+  color: white;
+  font-size: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
